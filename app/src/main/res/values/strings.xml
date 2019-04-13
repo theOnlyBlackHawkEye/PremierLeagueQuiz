@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PL Quiz</string>
+    <string name="background_image_description">Premier League Logo</string>
+    <string name="app_breifing">This is a Quick Quiz to check if you are a true Premier League FAN</string>
+    <string name="question_one_header">Question One :</string>
+    <string name="question_one">Champion of Premier League 2017/18 Season is :</string>
+    <string name="manchester_united">Manchester United</string>
+    <string name="liverpool">Liverpool</string>
+    <string name="manchester_city">Manchester City</string>
+    <string name="chelsea">Chelsea</string>
+    <string name="question_two_header">Question Two :</string>
+    <string name="question_two">Best Player in Premier League 2017/18 Season is :</string>
+    <string name="eden_hazard">Eden Hazard</string>
+    <string name="mohamed_salah">Mohamed Salah</string>
+    <string name="riyad_mahrez">Riyad Mahrez</string>
+    <string name="sergio_ag_ero">Sergio Agüero</string>
+    <string name="question_three_header">Question Three :</string>
+    <string name="question_three">Top TWO Scoring Players in Premier League 2017/18 Season are :</string>
+    <string name="jamie_vardy">Jamie Vardy</string>
+    <string name="harry_kane">Harry Kane</string>
+    <string name="question_four_header">Question Four :</string>
+    <string name="question_four">Record for the Most Strikes in a 38-match Season is :</string>
+    <string name="goals_edit_text_hint">Goals</string>
+    <string name="question_five_header">Question Five :</string>
+    <string name="question_five">Most Winning Champion of Premier League scince 1889 is :</string>
+    <string name="club_edit_text_hint">Club Name</string>
+    <string name="back_button">Back</string>
+    <string name="start_button">Start</string>
+    <string name="exit_button">Exit</string>
+    <string name="submit_button">Submit</string>
+    <string name="next_button">Next</string>
+</resources>

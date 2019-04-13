@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:fillViewport="true"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/background_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="16dp"
+                android:contentDescription="@string/background_image_description"
+                android:scaleType="fitCenter"
+                android:src="@drawable/premier_league_background" />
+
+            <TextView
+                android:id="@+id/App_briefing"
+                style="@style/App_brief"
+                android:text="@string/app_breifing" />
+
+            <View
+                android:id="@+id/main_seperator_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@color/colorAccent"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_one_layout"
+            style="@style/question_layout"
+            android:visibility="invisible">
+
+            <TextView
+                style="@style/question_number"
+                android:text="@string/question_one_header" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_one" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/manchester_united" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/liverpool" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_01"
+                    style="@style/radio_button"
+                    android:text="@string/manchester_city" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/chelsea" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_two_layout"
+            style="@style/question_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/question_number"
+                android:text="@string/question_two_header" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_two" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/eden_hazard" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_02"
+                    style="@style/radio_button"
+                    android:text="@string/mohamed_salah" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/riyad_mahrez" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/sergio_ag_ero" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_three_layout"
+            style="@style/question_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/question_number"
+                android:text="@string/question_three_header" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_three" />
+
+            <CheckBox
+                android:id="@+id/check_box_01"
+                style="@style/radio_button"
+                android:text="@string/mohamed_salah" />
+
+            <CheckBox
+                android:id="@+id/check_box_02"
+                style="@style/radio_button"
+                android:text="@string/sergio_ag_ero" />
+
+            <CheckBox
+                android:id="@+id/check_box_03"
+                style="@style/radio_button"
+                android:text="@string/jamie_vardy" />
+
+            <CheckBox
+                android:id="@+id/check_box_04"
+                style="@style/radio_button"
+                android:text="@string/harry_kane" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_four_layout"
+            style="@style/question_layout"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/question_number"
+                android:text="@string/question_four_header" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_four" />
+
+            <EditText
+                android:id="@+id/goals_edit_text"
+                style="@style/edit_text"
+                android:hint="@string/goals_edit_text_hint"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_five_layout"
+            style="@style/question_layout"
+            android:focusableInTouchMode="true"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/question_number"
+                android:text="@string/question_five_header" />
+
+            <TextView
+                style="@style/question_text"
+                android:text="@string/question_five" />
+
+            <EditText
+                android:id="@+id/club_edit_text"
+                style="@style/edit_text"
+                android:hint="@string/club_edit_text_hint"
+                android:inputType="text" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/previous_question_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="24dp"
+            android:fontFamily="@font/capital"
+            android:gravity="center"
+            android:onClick="previousQuestion"
+            android:text="@string/back_button"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/start_quiz_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/capital"
+            android:gravity="center"
+            android:onClick="startQuiz"
+            android:text="@string/start_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="96dp"
+            android:fontFamily="@font/capital"
+            android:gravity="center"
+            android:onClick="exitApp"
+            android:padding="8dp"
+            android:text="@string/exit_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/capital"
+            android:gravity="center"
+            android:onClick="calculateScore"
+            android:text="@string/submit_button"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/next_question_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="24dp"
+            android:fontFamily="@font/capital"
+            android:gravity="center"
+            android:onClick="nextQuestion"
+            android:text="@string/next_button"
+            android:textColor="@android:color/white"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</ScrollView>

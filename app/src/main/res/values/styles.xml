@@ -7,6 +7,7 @@
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">@color/colorAccent</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/backgroundColor</item>
     </style>
 
     <style name="App_brief">

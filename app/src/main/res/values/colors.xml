@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#f00055</color>
-    <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#3f1046</color>
     <color name="buttonTextColor">@android:color/white</color>
     <color name="choicesText">@android:color/white</color>
     <color name="backgroundColor">#ff015b</color>
     <color name="inactive_button">@android:color/darker_gray</color>
-    <color name="Question">@android:color/black</color>
 </resources>
